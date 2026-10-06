@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: lightblue;
+  background-color: antiquewhite;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 680px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between; /* pushes h2 left, search input right */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: darkcyan;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid black;
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: green;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td:last-child {
+  white-space: nowrap; /* prevents buttons from stacking */
+}
+
+#add-book {
+  background-color: green; /* a green, e.g. #4CAF50 or similar */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-form {
+  display: flex; /* what layout direction stacks things top-to-bottom instead of side-by-side? */
+  flex-direction: column; /* only needed if display is flex */
+  gap: 10px; /* spacing between each stacked input */
+  margin-bottom: 10px; /* spacing below the form, before List of Books */
+}
+
+.add-form input {
+  padding: 10px; /* bigger padding = bigger box, e.g. 10px */
+  font-size: 16px; /* bigger text, e.g. 1rem or 16px */
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+#search-input {
+  padding: 10px; /* bigger padding = bigger box, e.g. 10px */
+  font-size: 16px; /* bigger text, e.g. 1rem or 16px */
+  border-radius: 2px;
+  border: 1px solid;
+}

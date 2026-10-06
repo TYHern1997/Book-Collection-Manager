@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Collection Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <h1>My Page Collector</h1>
+
+      <div class="add-form">
+        <input type="text" id="title-input" placeholder="Enter title" />
+        <input type="text" id="author-input" placeholder="Enter author" />
+        <input type="number" id="year-input" placeholder="Enter year" />
+        <button id="add-book">Add Book</button>
+      </div>
+      <div class="list-header">
+        <h2>List of Books</h2>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by title or author"
+        />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year Published</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
