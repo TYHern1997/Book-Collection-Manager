@@ -16,7 +16,7 @@ Covered:
 - Default books load
 - Add a book, and it persists after reload
 - Delete a book
-- Search filtering
+- Search filteringgio
 - Delete and edit while a search filter is active (regression tests for a wrong-index bug)
 
 ## Run locally
