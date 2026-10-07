@@ -33,7 +33,7 @@ export default defineConfig({
     baseURL: 'http://localhost:5174',
     trace: 'on-first-retry',
     launchOptions: {
-      slowMo: 1000,   // pause 1000ms between every action
+      slowMo: Number(process.env.SLOWMO) || 0,
     },
 
   },
